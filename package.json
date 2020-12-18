@@ -10,44 +10,7 @@
   "url": "ssh://git@github.com:dad2vad/workerkit.git",
   "directory": "@dad2vad/workerkit"
 },
-  "files": [
-    "lib"
-  ],
-  "main": "lib/index",
-  "types": "lib/index",
-  "scripts": {
-    "format": "prettier --write \"{src,__tests__}/**/*.ts\" --single-quote --trailing-comma es5",
-    "lint": "tslint --force --format verbose \"src/**/*.ts\"",
-    "prepublishOnly": "yarn build",
-    "prebuild": "yarn format && yarn lint && echo Using TypeScript && tsc --version",
-    "build": "tsc --pretty",
-    "test": "jest",
-    "coverage": "jest --coverage",
-    "watch": "yarn build -- --watch",
-    "watch:test": "jest --watch",
-    "docs": "typedoc --out docs --theme minimal src"
-  },
-  "dependencies": {
-    "@cloudflare/workers-types": "^1.0.6",
-    "whatwg-fetch": "^3.0.0"
-  },
-  "devDependencies": {
-    "@types/jest": "^24.0.23",
-    "@types/node": "^12.12.17",
-    "coveralls": "^3.0.9",
-    "jest": "^24.9.0",
-    "prettier": "^1.19.1",
-    "ts-jest": "^24.2.0",
-    "ts-node": "^8.5.4",
-    "tslint": "^5.20.1",
-    "tslint-config-prettier": "^1.18.0",
-    "typedoc": "^0.15.4",
-    "typescript": "^3.7.3"
-  },
-  "engines": {
-    "node": ">=10.0.0"
-  },
-  "jest": {
-    "preset": "ts-jest"
-  }
+
+  "main": "index.js"
+
 }
