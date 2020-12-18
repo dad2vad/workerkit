@@ -1,20 +1,15 @@
 {
-  "name": "cf-worker-kit",
+  "name": "@dad2vad/workerkit",
   "version": "v0.2.0",
   "description": "A library to make writing Cloudflare Workers way nicer.",
-  "license": "MIT",
-  "repository": "https://github.com/lucacasonato/workerkit",
-  "author": {
-    "name": "Luca Casonato",
-    "email": "hello@lcas.dev",
-    "url": "https://lcas.dev"
-  },
-  "keywords": [
-    "cloudflare",
-    "cloudflare-worker",
-    "typescript",
-    "workers-kv"
-  ],
+"publishConfig": {
+  "registry": "https://npm.pkg.github.com/dad2vad"
+},
+  "repository": {
+  "type": "git",
+  "url": "ssh://git@github.com:dad2vad/workerkit.git",
+  "directory": "@dad2vad/workerkit"
+},
   "files": [
     "lib"
   ],
